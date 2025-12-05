@@ -1,0 +1,6 @@
+sale_id,date,product_id,product_name,category,unit_price,quantity,region,salesperson
+1,2024-01-01,P101,Keyboard,Electronics,1200,3,APAC,Rohan
+2,2024-01-01,P102,Mouse,Electronics,800,2,EMEA,Ashley
+3,2024-02-10,P103,Monitor,Electronics,14000,1,APAC,Vishal
+4,2024-02-12,P104,Table,Furniture,7000,1,US,Ananya
+5,2024-02-15,P101,Keyboard,Electronics,1200,4,APAC,Rohan
