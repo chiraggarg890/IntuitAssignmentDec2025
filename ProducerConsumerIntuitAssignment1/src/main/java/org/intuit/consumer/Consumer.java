@@ -1,5 +1,6 @@
 package org.intuit.consumer;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.BlockingQueue;
 
 /**
@@ -30,9 +31,9 @@ public class Consumer implements Runnable {
                 // Blocks if queue is empty
                 String message = queue.take();
 
-                System.out.println("    [CONSUMED by C" + consumerId + "] -> " + message);
+                System.out.println(LocalDateTime.now() + "     [CONSUMED by C" + consumerId + "] -> " + message);
 
-                Thread.sleep(600);
+                Thread.sleep(800);
             }
 
         } catch (InterruptedException e) {
@@ -41,4 +42,3 @@ public class Consumer implements Runnable {
         }
     }
 }
-

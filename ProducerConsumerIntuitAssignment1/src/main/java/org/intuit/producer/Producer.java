@@ -1,5 +1,6 @@
 package org.intuit.producer;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.BlockingQueue;
 
 /**
@@ -29,12 +30,15 @@ public class Producer implements Runnable {
             while (!Thread.currentThread().isInterrupted()) {
 
                 // Create unique message for this producer
-                String message = "Producer-" + producerId + ": Item-" + counter++;
+                String message = String.format(
+                        "[P%d] Message #%d @ %s",
+                        producerId, counter++, LocalDateTime.now()
+                );
 
                 // Blocks if queue is full
                 queue.put(message);
 
-                System.out.println("[PRODUCED] " + message);
+                System.out.println(LocalDateTime.now() + " [PRODUCED by P" + producerId + "] -> " + message);
 
                 // Slow down production for demonstration purposes
                 Thread.sleep(400);
