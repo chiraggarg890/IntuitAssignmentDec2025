@@ -1,7 +1,7 @@
 .DS_Store
-SalesDataAnalysis/.idea/*
-SalesDataAnalysis/target/*
-SalesDataAnalysis/.mvn/*
+SalesDataAnalysisIntuitAssignment2/.idea/*
+SalesDataAnalysisIntuitAssignment2/target/*
+SalesDataAnalysisIntuitAssignment2/.mvn/*
 ProducerConsumerIntuitAssignment1/.idea/*
 ProducerConsumerIntuitAssignment1/target/*
 ProducerConsumerIntuitAssignment1/.mvn/*
