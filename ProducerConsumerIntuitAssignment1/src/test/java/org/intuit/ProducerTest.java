@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ProducerTest {
 
     /**
-     * Test 1 → Producer generates unique messages and inserts into queue.
+     * Producer generates unique messages and inserts into queue.
      */
     @Test
     public void testProducerProducesMessages() throws Exception {
@@ -28,7 +28,7 @@ public class ProducerTest {
     }
 
     /**
-     * Test 2 → Producer interruptions inside queue.put()
+     * Producer interruptions inside queue.put()
      */
     @Test
     public void testProducerInterruptDuringPut() throws Exception {

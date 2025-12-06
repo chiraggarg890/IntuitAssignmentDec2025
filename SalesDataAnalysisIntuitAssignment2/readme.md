@@ -1,9 +1,12 @@
 # Sales Analysis Using Java Streams & Functional Programming
 
+
+## 📌 Project Overview
+
 This project demonstrates **functional programming**, **Java Streams**, **lambda expressions**, **CSV parsing**, and **data aggregation**.  
 It analyzes sales data from a CSV file and generates a detailed analytical report.
 
-The project also includes **full JUnit 5 test coverage**, covering:
+The project also includes **full JUnit  test coverage**, covering:
 - `SalesAnalyzer`
 - `Sale`
 - `CsvReader`
@@ -90,7 +93,3 @@ Category Summary (units + revenue)
 Product Summary (units + revenue + avg price)
 
 Each of these uses functional programming + Streams.
-
----
-## 🧑‍💻 Author
-Chirag Garg

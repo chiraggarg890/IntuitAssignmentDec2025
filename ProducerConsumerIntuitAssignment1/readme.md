@@ -46,12 +46,20 @@ Enter program run duration (in seconds): 10
 
 
 ---
+## 🧪 Build the project
+
+```bash
+mvn clean install
+```
+
+--- 
 
 ## 🧪 Running Unit Tests
 
 If using Maven:
+```bash
 mvn test
-
+```
 
 If using IntelliJ or Eclipse:  
 Right-click → Run All Tests
@@ -65,8 +73,3 @@ Right-click → Run All Tests
 - Graceful interrupt handling.
 - Clean and maintainable OOP design.
 - 100% test coverage (Producer, Consumer, and Integration tests).
-
----
-
-## 👨‍💻 Author
-Chirag Garg
