@@ -22,17 +22,10 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number of producers: ");
-        int numProducers = sc.nextInt();
-
-        System.out.print("Enter number of consumers: ");
-        int numConsumers = sc.nextInt();
-
-        System.out.print("Enter buffer size: ");
-        int bufferSize = sc.nextInt();
-
-        System.out.print("Enter program run duration (in seconds): ");
-        int duration = sc.nextInt();
+        int numProducers = readPositiveInt(sc, "number of producers (>= 1)");
+        int numConsumers = readPositiveInt(sc, "number of consumers (>= 1)");
+        int bufferSize = readPositiveInt(sc, "buffer size (>= 1)");
+        int duration = readPositiveInt(sc, "program run duration in seconds (>= 0)");
 
         sc.close();
 
@@ -83,6 +76,27 @@ public class Main {
         }
         return threads;
     }
+
+    /**
+     * Reads a positive integer (>=1) from Scanner, prompting until valid value is entered.
+     */
+    private static int readPositiveInt(Scanner sc, String prompt) {
+        while (true) {
+            System.out.print("Enter " + prompt + ": ");
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input: not an integer. Please try again.");
+                sc.next(); // consume invalid token
+                continue;
+            }
+            int val = sc.nextInt();
+            if (val < 1) {
+                System.out.println("Invalid input: must be >= 1. Please try again.");
+                continue;
+            }
+            return val;
+        }
+    }
+
 }
 
 
