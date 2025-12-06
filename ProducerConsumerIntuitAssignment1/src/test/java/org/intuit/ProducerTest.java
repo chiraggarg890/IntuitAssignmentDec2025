@@ -47,7 +47,7 @@ public class ProducerTest {
     }
 
     /**
-     * Test 3 → Producer interruption during Thread.sleep()
+     * Producer interruption during Thread.sleep()
      */
     @Test
     public void testProducerInterruptDuringSleep() throws Exception {
